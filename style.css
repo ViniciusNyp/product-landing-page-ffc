@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: medium;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgba(128, 128, 128, 0.288);
+  font-family: "Oswald", sans-serif;
+}
+
+header {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  font-size: 1.01rem;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.082);
+  z-index: 1;
+}
+
+#header-img {
+  position: relative;
+  width: 75px;
+  margin: 5px 15px;
+}
+
+ul {
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: 15px;
+}
+
+li {
+  list-style: none;
+  margin-right: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+  transition: all 150ms ease;
+  padding: 7px;
+}
+
+a:hover {
+  background-color: rgba(211, 211, 211, 0.445);
+  border-radius: 3px;
+}
+
+section {
+  padding: 30px;
+  padding-top: 100px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 1.7rem;
+  padding: 5px;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+form {
+  text-align: center;
+  margin: 10px;
+}
+
+input {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.95rem;
+  margin: 5px;
+  padding: 3px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.email {
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  max-width: 250px;
+}
+
+#how-it-work {
+  background: white;
+  padding: 10px;
+  max-height: 650px;
+}
+
+#shipping {
+  padding: 10px;
+}
+
+.content-align {
+  margin: auto;
+  max-width: 720px;
+}
+
+.map-image {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.video-container {
+  max-width: 700px;
+  margin: 10px auto;
+  padding: 10px;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+iframe {
+  z-index: 0;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 75%;
+  max-height: 350px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: justify;
+  text-indent: 1rem;
+  margin: 5px;
+}
+
+@media all and (max-width: 400px) {
+  html {
+    font-size: 13px;
+  }
+}
